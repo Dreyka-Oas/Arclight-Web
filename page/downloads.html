@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Sets the character encoding for the HTML document -->
+  <meta charset="UTF-8">
+  <!-- Ensures the website is properly displayed on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title of the webpage that appears on the browser tab -->
+  <title>Arclight - Downloads</title>
+  <!-- Links to external CSS files for styling -->
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/downloads_styles.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">
+        <!-- Logo image for the website -->
+        <img src="https://github.com/IzzelAliz/Arclight/raw/FeudalKings/.github/arclightlogo.jpg" alt="Arclight Logo">
+        <!-- Main heading for the site -->
+        <h1>Arclight</h1>
+      </div>
+      <div class="nav-links">
+        <!-- Navigation links to different sections of the website -->
+        <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="../index.html#features"><i class="fas fa-list"></i> Features</a>
+        <a href="../page/#downloads"><i class="fas fa-download"></i> Downloads</a>
+        <a href="../index.html#support"><i class="fas fa-question-circle"></i> Support</a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="downloads" class="section">
+    <div class="container">
+      <h2 class="section-title"><i class="fas fa-rocket emoji"></i> Arclight Releases</h2>
+      <div class="sort-options">
+        <!-- Buttons to sort the releases by different criteria -->
+        <button class="sort-btn active" data-sort="date"><i class="fas fa-calendar-alt"></i> Date</button>
+        <button class="sort-btn" data-sort="version"><i class="fas fa-code-branch"></i> Version</button>
+        <button class="sort-btn" data-sort="minecraft"><i class="fas fa-cubes"></i> Minecraft</button>
+      </div>
+      <div class="filter-options">
+        <!-- Dropdown to filter releases by Minecraft version -->
+        <div class="filter-dropdown">
+          <button class="filter-btn" onclick="toggleDropdown('minecraftFilter')">
+            <i class="fas fa-filter"></i> Minecraft Version
+          </button>
+          <div id="minecraftFilter" class="filter-content">
+            <!-- Minecraft versions will be dynamically added here -->
+          </div>
+        </div>
+        <!-- Dropdown to filter releases by Loader type -->
+        <div class="filter-dropdown">
+          <button class="filter-btn" onclick="toggleDropdown('loaderFilter')">
+            <i class="fas fa-puzzle-piece"></i> Loader
+          </button>
+          <div id="loaderFilter" class="filter-content">
+            <button onclick="filterLoader('fabric')">Fabric</button>
+            <button onclick="filterLoader('forge')">Forge</button>
+            <button onclick="filterLoader('neoforge')">NeoForge</button>
+          </div>
+        </div>
+        <!-- Button to reset all filters -->
+        <button class="filter-btn" onclick="resetFilters()"><i class="fas fa-undo"></i> Reset Filters</button>
+      </div>
+      <!-- Loading spinner that is shown while the data is being fetched -->
+      <div id="loading">
+        <div class="spinner"></div>
+      </div>
+      <!-- Container where the list of releases will be dynamically added -->
+      <div class="releases-list" id="releases-list">
+        <!-- Releases will be dynamically added here -->
+      </div>
+      <!-- Pagination buttons will be dynamically added here -->
+      <div class="pagination" id="pagination"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <!-- Footer content -->
+      <p>&copy; 2023 Arclight Project. All rights reserved. <i class="fas fa-code emoji"></i> with <i class="fas fa-heart emoji"></i></p>
+    </div>
+  </footer>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="../script/download_script.js"></script> 
+</body>
+</html>

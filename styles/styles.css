@@ -1,0 +1,101 @@
+/* Importing fonts and icons */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+/* Global CSS variables */
+:root {
+  --primary-color: #6e48aa;
+  --hover-color: #8a6cc9;
+  --bg-color: #1a1a2e;
+  --text-color: #ffffff;
+  --card-bg-color: #16213e;
+}
+
+/* Global styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: rgba(22, 33, 62, 0.8);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+/* Logo styles */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo image styles */
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Navigation links styles */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--hover-color);
+}
+
+/* Section styles */
+.section {
+  padding: 5rem 0;
+}
+
+/* Section title styles */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--card-bg-color);
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 4rem;
+}

@@ -1,0 +1,205 @@
+/* Hero section styling with background image and gradient overlay */
+.hero {
+    background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('https://github.com/IzzelAliz/Arclight/raw/FeudalKings/.github/arclightlogo.jpg') no-repeat center center/cover;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* Content styling within the hero section */
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Heading styles in the hero section */
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Paragraph styling in the hero section */
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    background-color: var(--hover-color);
+}
+
+/* Features section with a responsive grid layout */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+/* Styling for individual feature cards */
+.feature-card {
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for feature cards */
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Icon styling in feature cards */
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Download options styling with center alignment */
+.download-options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Download button styling */
+.download-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for download buttons */
+.download-btn:hover {
+    background-color: var(--hover-color);
+}
+
+/* Support section styling */
+#support {
+    background-color: var(--card-bg-color);
+    border-radius: 12px;
+    padding: 3rem;
+    margin-top: 4rem;
+}
+
+/* Grid layout for support items */
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Individual support item styling */
+.support-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for support items */
+.support-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon styling in support items */
+.support-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+/* Heading styling in support items */
+.support-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Link styling in support items */
+.support-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for links in support items */
+.support-item a:hover {
+    color: var(--hover-color);
+}
+
+/* Sponsors section styling */
+#sponsors {
+    background-color: var(--card-bg-color);
+    border-radius: 12px;
+    padding: 3rem;
+    margin-top: 4rem;
+}
+
+/* Grid layout for sponsor items */
+.sponsor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+}
+
+/* Individual sponsor item styling */
+.sponsor-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for sponsor items */
+.sponsor-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling in sponsor items */
+.sponsor-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Paragraph styling in sponsor items */
+.sponsor-item p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+/* Link styling in sponsor items */
+.sponsor-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for links in sponsor items */
+.sponsor-item a:hover {
+    color: var(--hover-color);
+}
